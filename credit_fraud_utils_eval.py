@@ -227,4 +227,5 @@ def evaluate_model(model, model_comparison, path, title, X_train, y_train, x_val
                 model_comparison[title + ' optimal threshold']['PR AUC'] = eval_auc_precision_recall_curve(
                     y_pred_prob=y_val_pred_proba, y_true=y_val)
 
+
     return model_comparison, optimal_threshold
